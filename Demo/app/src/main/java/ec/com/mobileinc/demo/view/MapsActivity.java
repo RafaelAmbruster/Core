@@ -1,4 +1,8 @@
-package ec.com.mobileinc.demo;
+/*
+ * Copyright (c) 2015. Property of Rafael Ambruster
+ */
+
+package ec.com.mobileinc.demo.view;
 
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
@@ -7,6 +11,8 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+
+import ec.com.mobileinc.demo.R;
 
 public class MapsActivity extends FragmentActivity {
 
