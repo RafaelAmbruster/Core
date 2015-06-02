@@ -13,7 +13,7 @@ import java.util.Date;
 import ec.com.mobileinc.demo.configuration.ConfigurationManager;
 import ec.com.mobileinc.demo.util.CustomDateFormat;
 
-public class DeviceLog
+public class LogDevice
         implements Log {
 
     private String createHtmlLogEntry(String paramString1, String paramString2, String paramString3) {

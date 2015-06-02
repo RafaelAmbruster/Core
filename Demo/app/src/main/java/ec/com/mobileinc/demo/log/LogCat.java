@@ -14,17 +14,17 @@ public class LogCat
         implements Log {
 
     public void error(String paramString1, String paramString2) {
-        //android.util.Log.e(paramString1, paramString2);
+
         Logger.t(paramString1).e(paramString2);
     }
 
     public void info(String paramString1, String paramString2) {
-        //android.util.Log.i(paramString1, paramString2);
+
         Logger.t(paramString1).d(paramString2);
     }
 
     public void warning(String paramString1, String paramString2) {
-        //android.util.Log.w(paramString1, paramString2);
+
         Logger.t(paramString1).w(paramString2);
     }
 

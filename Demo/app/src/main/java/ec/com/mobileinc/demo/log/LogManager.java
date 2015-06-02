@@ -8,7 +8,7 @@ import ec.com.mobileinc.demo.configuration.ConfigurationManager;
 
 public class LogManager {
     private static LogManager singleton;
-    private Log log = new DeviceLog();
+    private Log log = new LogDevice();
     private LogCat logcat = new LogCat();
 
     public synchronized static LogManager getInstance() {
