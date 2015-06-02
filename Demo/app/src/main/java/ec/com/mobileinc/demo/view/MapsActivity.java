@@ -13,8 +13,11 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
 import ec.com.mobileinc.demo.R;
+import ec.com.mobileinc.demo.log.LogManager;
 
 public class MapsActivity extends FragmentActivity {
+
+    private static final String TAG = MapsActivity.class.getSimpleName();
 
     private GoogleMap mMap;
 
@@ -22,6 +25,7 @@ public class MapsActivity extends FragmentActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maps);
+        LogManager.getInstance().info("Start","Starting Application");
         setUpMapIfNeeded();
     }
 
@@ -39,7 +43,9 @@ public class MapsActivity extends FragmentActivity {
                     .getMap();
 
             if (mMap != null) {
+                LogManager.getInstance().info("Map","Seeting the map");
                 setUpMap();
+                LogManager.getInstance().info("Error", "Seeting the map wrong");
             }
         }
     }

@@ -5,6 +5,7 @@
 package ec.com.mobileinc.demo;
 
 import android.app.Application;
+import com.orhanobut.logger.Logger;
 
 public class DemoApplication extends Application {
 
@@ -22,6 +23,7 @@ public class DemoApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+        Logger.init("Demo Application").hideThreadInfo().setMethodCount(3).setMethodOffset(2);
 
 
     }
