@@ -26,6 +26,9 @@ dependencies {
 
     // Custom Library
 
+    //Logs --- https://github.com/orhanobut/logger
+    compile 'com.orhanobut:logger:1.10'
+
     //Colors --- https://github.com/cesarferreira/colorize
     compile 'com.github.cesarferreira:colorize:0.2.1'
 
