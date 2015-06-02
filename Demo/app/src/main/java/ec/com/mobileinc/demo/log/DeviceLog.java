@@ -56,19 +56,19 @@ public class DeviceLog
     }
 
     public void error(String paramString1, String paramString2) {
-        write("#f9d6d6", ConfigurationManager.getInstance().getPath(3) + "e_log.html", paramString1, paramString2);
+        write("#f9d6d6", ConfigurationManager.getInstance().getPath(4) + "e_log.html", paramString1, paramString2);
     }
 
     public void info(String paramString1, String paramString2) {
-        write("#d7f9d6", ConfigurationManager.getInstance().getPath(3) + "i_log.html", paramString1, paramString2);
+        write("#d7f9d6", ConfigurationManager.getInstance().getPath(4) + "i_log.html", paramString1, paramString2);
     }
 
     public void warning(String paramString1, String paramString2) {
-        write("#f8f9d6", ConfigurationManager.getInstance().getPath(3) + "w_log.html", paramString1, paramString2);
+        write("#f8f9d6", ConfigurationManager.getInstance().getPath(4) + "w_log.html", paramString1, paramString2);
     }
 
     public void wl(boolean paramBoolean) {
-        String str = ConfigurationManager.getInstance().getPath(3) + "wl_log.html";
+        String str = ConfigurationManager.getInstance().getPath(4) + "wl_log.html";
         if (paramBoolean) {
             write("#f8f9d6", str, CustomDateFormat.completeFormat(new Date()), "Activated");
             return;

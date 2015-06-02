@@ -82,16 +82,6 @@ public class ConfigurationManager {
         return activeLogs;
     }
 
-    public void setActiveLogs(boolean activeLogs) {
-        this.activeLogs = activeLogs;
-    }
 
-    public int getTimeout() {
-        return timeout;
-    }
-
-    public void setTimeout(int timeout) {
-        this.timeout = timeout;
-    }
 
 }
