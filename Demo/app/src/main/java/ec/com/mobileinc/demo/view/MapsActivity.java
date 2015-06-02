@@ -45,7 +45,7 @@ public class MapsActivity extends FragmentActivity {
             if (mMap != null) {
                 LogManager.getInstance().info("Map","Seeting the map");
                 setUpMap();
-                LogManager.getInstance().info("Error", "Seeting the map wrong");
+                LogManager.getInstance().error("Error", "Seeting the map wrong");
             }
         }
     }

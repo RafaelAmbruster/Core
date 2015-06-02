@@ -17,7 +17,6 @@ public class ConfigurationManager {
 
     private static final String FOLDER_NAME = "/Demo/";
     private SparseArray<String> paths = new SparseArray<String>();
-
     private static ConfigurationManager singleton;
     private boolean activeLogs = true;
     private int timeout;

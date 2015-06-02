@@ -9,7 +9,6 @@ import android.content.Context;
 import android.net.wifi.WifiManager;
 import android.os.Build;
 import android.telephony.TelephonyManager;
-
 import ec.com.mobileinc.demo.log.LogManager;
 
 
