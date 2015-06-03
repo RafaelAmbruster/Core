@@ -10,9 +10,7 @@ import java.util.Date;
 import java.util.Locale;
 import java.util.TimeZone;
 
-
 public class CustomDateFormat {
-
 
     private static final String TIME_ZONE = "UTC";
 
@@ -57,7 +55,6 @@ public class CustomDateFormat {
         return sdfDate.parse(paramDate
                 .toString().trim());
     }
-
 
     public static String formatDateOnlyRelativeToCurrentDate(Date paramDate) {
         String str = "";

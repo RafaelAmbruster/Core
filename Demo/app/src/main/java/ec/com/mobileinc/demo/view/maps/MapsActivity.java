@@ -2,7 +2,7 @@
  * Copyright (c) 2015. Property of Rafael Ambruster
  */
 
-package ec.com.mobileinc.demo.view;
+package ec.com.mobileinc.demo.view.maps;
 
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
@@ -45,7 +45,6 @@ public class MapsActivity extends FragmentActivity {
             if (mMap != null) {
                 LogManager.getInstance().info("Map","Seeting the map");
                 setUpMap();
-                LogManager.getInstance().error("Error", "Seeting the map wrong");
             }
         }
     }

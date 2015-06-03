@@ -12,9 +12,34 @@ android {
         versionName "1.0"
     }
     buildTypes {
+
+        debug {
+
+            versionNameSuffix "-DEBUG"
+            try {
+                signingConfig signingConfigs.debug
+            } catch (ex) {
+            }
+            minifyEnabled false
+        }
         release {
+            try {
+                signingConfig signingConfigs.release
+            } catch (ex) {
+            }
+            zipAlignEnabled true
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+
+
+    applicationVariants.all { variant ->
+        variant.outputs.each { output ->
+            def file = output.outputFile
+            def fileName = file.name.replace(".apk", "-v" + versionName + "-c" + versionCode + ".apk")
+            output.outputFile = new File(file.parentFile, fileName)
         }
     }
 }
@@ -33,10 +58,9 @@ dependencies {
     compile 'com.github.cesarferreira:colorize:0.2.1'
 
     //Design --- https://github.com/florent37/MaterialViewPager
-    compile ('com.github.florent37:materialviewpager:1.0.4@aar'){
+    compile('com.github.florent37:materialviewpager:1.0.4@aar') {
         transitive = true
     }
-
 
     //Calendar --- https://github.com/prolificinteractive/material-calendarview
     compile 'com.prolificinteractive:material-calendarview:0.4.0'
@@ -58,7 +82,6 @@ dependencies {
     compile 'com.github.chrisbanes.photoview:library:1.2.4'
     // Context Menu --- https://android-arsenal.com/details/1/1387
     compile 'com.yalantis:contextmenu:1.0.4'
-
 
     //CardsLib --- https://github.com/gabrielemariotti/cardslib
     //Core
