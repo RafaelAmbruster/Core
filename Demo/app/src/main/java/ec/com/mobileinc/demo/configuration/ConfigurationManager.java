@@ -13,9 +13,11 @@ import android.util.SparseArray;
 import java.io.File;
 import java.io.IOException;
 
+import ec.com.mobileinc.demo.DemoApplication;
+
 public class ConfigurationManager {
 
-    private static final String FOLDER_NAME = "/Demo/";
+    private static final String FOLDER_NAME = "/"+DemoApplication.TAG+"/";
     private SparseArray<String> paths = new SparseArray<String>();
     private static ConfigurationManager singleton;
     private boolean activeLogs = true;
@@ -51,7 +53,7 @@ public class ConfigurationManager {
                 localFile.mkdirs();
         }
         try {
-            new File(str + ".dem").createNewFile();
+            new File(str + DemoApplication.TAG).createNewFile();
             return str;
         } catch (IOException localIOException) {
             localIOException.printStackTrace();

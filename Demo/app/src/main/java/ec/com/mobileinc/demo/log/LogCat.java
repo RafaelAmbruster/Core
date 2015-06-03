@@ -30,13 +30,9 @@ public class LogCat
 
     public void wl(boolean paramBoolean) {
         if (paramBoolean) {
-            //android.util.Log.w("CPUWakeLock", CustomDateFormat.completeFormat(new Date()) + "  CPUWakeLock activated");
-
             Logger.t("CPUWakeLock").d(CustomDateFormat.completeFormat(new Date()) + "  CPUWakeLock activated");
             return;
         }
-        //android.util.Log.i("CPUWakeLock", CustomDateFormat.completeFormat(new Date()) + "  CPUWakeLock deactivated");
-
         Logger.t("CPUWakeLock").d(CustomDateFormat.completeFormat(new Date()) + "  CPUWakeLock deactivated");
     }
 

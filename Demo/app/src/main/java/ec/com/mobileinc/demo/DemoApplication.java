@@ -10,7 +10,7 @@ import com.orhanobut.logger.Logger;
 public class DemoApplication extends Application {
 
     private static DemoApplication instance;
-
+    public static String TAG = "Demo";
 
     public DemoApplication() {
         instance = this;
