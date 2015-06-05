@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">Demo</string>
     <string name="title_activity_maps">Map</string>
+    <string name="drawer_item_home">Inicio</string>
+    <string name="drawer_item_settings">Configuración</string>
+    <string name="drawer_item_open_source">Open Source</string>
+    <string name="drawer_item_help">Ayuda</string>
+    <string name="drawer_item_contact">Contacto</string>
 </resources>

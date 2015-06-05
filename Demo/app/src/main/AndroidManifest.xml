@@ -27,8 +27,8 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name=".view.maps.MapsActivity"
-            android:label="@string/title_activity_maps" >
+            android:name=".view.activity.AppFragmentActivity"
+            android:theme="@style/MaterialDrawerTheme.Light.DarkToolbar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
